@@ -44,4 +44,57 @@ li {
 
 .gallery-item:hover {
   cursor: pointer;
+  scale: 1.05;
+}
+
+.gallery-item {
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feedback-form {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  gap: 8px;
+}
+
+input,
+textarea {
+  padding-left: 8px;
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  width: 360px;
+  height: 40px;
+}
+
+textarea {
+  padding-top: 8px;
+  height: 80px;
+  resize: none;
+}
+
+button {
+  margin-top: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  border: none;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+button:hover {
+  background-color: #6c8cff;
 }
