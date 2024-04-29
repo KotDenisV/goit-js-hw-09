@@ -67,9 +67,14 @@ const images = [
 const gallery = document.querySelector('.gallery');
 
 
-
-
 const markup = images
   .map((img) => `<li class="gallery-item"><a class="gallery-link" href=${img.original}><img class="gallery-image" src=${img.preview} alt=${img.description} /></a></li>`)
   .join('');
 gallery.insertAdjacentHTML('afterbegin', markup);
+
+
+
+// Описаний в документації
+import SimpleLightbox from "simplelightbox";
+// Додатковий імпорт стилів
+import "simplelightbox/dist/simple-lightbox.min.css";
